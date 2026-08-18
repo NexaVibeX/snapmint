@@ -6,45 +6,43 @@
   <title>SnapMint — Home</title>
   <meta name="description" content="SnapMint official home and policy pages.">
   <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; font-family: Inter, Arial, sans-serif;
-      background: #f6f7fb; color: #15161a;
-    }
-    header {
-      padding: 72px 24px 56px; text-align: center;
-      background: linear-gradient(135deg, #17181c, #34363f);
-      color: white;
-    }
-    .logo { font-size: 42px; font-weight: 800; letter-spacing: -1.5px; }
-    .tagline { margin: 12px auto 0; max-width: 650px; color: #d9dbe2; font-size: 17px; line-height: 1.6; }
-    main { max-width: 1050px; margin: 0 auto; padding: 48px 24px 70px; }
-    h1 { margin: 0 0 10px; font-size: 30px; }
-    .intro { color: #666b76; margin-bottom: 28px; line-height: 1.6; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
-    .card {
-      display: flex; flex-direction: column; gap: 10px; text-decoration: none;
-      background: white; border: 1px solid #e7e8ed; border-radius: 18px;
-      padding: 24px; color: #17181c; box-shadow: 0 8px 30px rgba(0,0,0,.05);
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-    .card:hover { transform: translateY(-3px); box-shadow: 0 14px 36px rgba(0,0,0,.09); }
-    .card span { font-size: 18px; font-weight: 700; }
-    .card small { color: #777b85; }
-    footer { text-align: center; padding: 28px; color: #777b85; font-size: 14px; }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;min-height:100vh;font-family:Inter,Arial,Helvetica,sans-serif;color:#f4f7f7;background:radial-gradient(circle at 50% -10%,rgba(0,255,214,.07),transparent 34%),linear-gradient(180deg,#050a0b 0%,#070b0d 55%,#050708 100%)}
+    a{color:inherit}
+    .top{border-bottom:1px solid rgba(255,255,255,.09);text-align:center;padding:58px 20px 42px}
+    .brand{margin:0;font-size:clamp(34px,5vw,44px);line-height:1;font-weight:850;letter-spacing:-1.5px;color:#00f2d5;text-shadow:0 0 24px rgba(0,242,213,.12)}
+    .subtitle{margin:14px 0 0;color:#b6c1c1;font-size:15px}
+    main{width:min(960px,calc(100% - 32px));margin:0 auto;padding:46px 0 72px}
+    .hero{margin-bottom:28px}.hero h2{margin:0 0 9px;font-size:clamp(28px,4vw,36px);letter-spacing:-.7px}.hero p{margin:0;color:#aeb9b9;font-size:15px;line-height:1.7}
+    .panel{background:linear-gradient(180deg,rgba(19,27,28,.96),rgba(12,17,18,.96));border:1px solid rgba(255,255,255,.10);border-radius:22px;padding:26px;box-shadow:0 18px 60px rgba(0,0,0,.38),inset 0 1px 0 rgba(255,255,255,.025)}
+    .section-title{margin:0 0 20px;color:#00f2d5;font-size:19px;font-weight:750}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .card{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px;padding:18px 19px;text-decoration:none;background:#0b1112;border:1px solid rgba(255,255,255,.085);border-radius:15px;transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease}
+    .card:hover{transform:translateY(-2px);border-color:rgba(0,242,213,.42);background:#0d1516;box-shadow:0 9px 28px rgba(0,0,0,.28)}
+    .card-content{min-width:0}.card-title{display:block;color:#f1f5f5;font-size:16px;font-weight:700;margin-bottom:5px}.card-desc{display:block;color:#7f8c8d;font-size:13px;line-height:1.45}
+    .arrow{flex:0 0 auto;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;color:#00f2d5;border:1px solid rgba(0,242,213,.18);background:rgba(0,242,213,.055);font-size:17px}
+    footer{padding:25px 20px 32px;border-top:1px solid rgba(255,255,255,.07);text-align:center;color:#697474;font-size:13px}
+    @media(max-width:680px){.top{padding:44px 18px 34px}main{width:min(100% - 22px,960px);padding:34px 0 52px}.panel{padding:18px;border-radius:18px}.grid{grid-template-columns:1fr}.card{min-height:70px}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">SnapMint</div>
-    <div class="tagline">Welcome to SnapMint. Find important information, policies, and details about the platform below.</div>
-  </header>
+  <header class="top"><h1 class="brand">SNAPMINT</h1><p class="subtitle">Social &amp; Creator Platform</p></header>
   <main>
-    <h1>SnapMint Home</h1>
-    <p class="intro">Use the links below to open the available SnapMint pages.</p>
-    <div class="grid">
-      <a class="card" href="about.html"><span>About</span><small>Open page →</small></a><a class="card" href="account-data-deletion.html"><span>Account Data Deletion</span><small>Open page →</small></a><a class="card" href="community-guidelines.html"><span>Community Guidelines</span><small>Open page →</small></a><a class="card" href="cookie-tracking-policy.html"><span>Cookie Tracking Policy</span><small>Open page →</small></a><a class="card" href="copyright-policy.html"><span>Copyright Policy</span><small>Open page →</small></a><a class="card" href="privacy-policy.html"><span>Privacy Policy</span><small>Open page →</small></a><a class="card" href="refund-cancellation-policy.html"><span>Refund Cancellation Policy</span><small>Open page →</small></a><a class="card" href="rewards-withdrawal-policy.html"><span>Rewards Withdrawal Policy</span><small>Open page →</small></a><a class="card" href="terms-of-service.html"><span>Terms Of Service</span><small>Open page →</small></a>
-    </div>
+    <section class="hero"><h2>SnapMint Home</h2><p>Welcome to SnapMint. Access important information, policies, account details, and platform guidelines from one place.</p></section>
+    <section class="panel">
+      <h3 class="section-title">Important Information</h3>
+      <div class="grid">
+        <a class="card" href="about.html"><div class="card-content"><span class="card-title">About SnapMint</span><span class="card-desc">Learn more about the SnapMint platform.</span></div><span class="arrow">→</span></a>
+        <a class="card" href="privacy-policy.html"><div class="card-content"><span class="card-title">Privacy Policy</span><span class="card-desc">How SnapMint handles privacy and personal data.</span></div><span class="arrow">→</span></a>
+        <a class="card" href="terms-of-service.html"><div class="card-content"><span class="card-title">Terms of Service</span><span class="card-desc">Terms and conditions for using SnapMint.</span></div><span class="arrow">→</span></a>
+        <a class="card" href="community-guidelines.html"><div class="card-content"><span class="card-title">Community Guidelines</span><span class="card-desc">Rules and standards for the SnapMint community.</span></div><span class="arrow">→</span></a>
+        <a class="card" href="account-data-deletion.html"><div class="card-content"><span class="card-title">Account &amp; Data Deletion</span><span class="card-desc">Information about requesting account and data deletion.</span></div><span class="arrow">→</span></a>
+        <a class="card" href="cookie-tracking-policy.html"><div class="card-content"><span class="card-title">Cookie &amp; Tracking Policy</span><span class="card-desc">Details about cookies and tracking technologies.</span></div><span class="arrow">→</span></a>
+        <a class="card" href="copyright-policy.html"><div class="card-content"><span class="card-title">Copyright Policy</span><span class="card-desc">Copyright and intellectual property information.</span></div><span class="arrow">→</span></a>
+        <a class="card" href="refund-cancellation-policy.html"><div class="card-content"><span class="card-title">Refund &amp; Cancellation Policy</span><span class="card-desc">Information about refunds and cancellations.</span></div><span class="arrow">→</span></a>
+        <a class="card" href="rewards-withdrawal-policy.html"><div class="card-content"><span class="card-title">Rewards &amp; Withdrawal Policy</span><span class="card-desc">Information about rewards and withdrawals.</span></div><span class="arrow">→</span></a>
+      </div>
+    </section>
   </main>
   <footer>© 2026 SnapMint. All rights reserved.</footer>
 </body>
